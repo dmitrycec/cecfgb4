@@ -1,0 +1,22 @@
+gitk  -  графический интерфейс для просмотра 
+
+git config --global user.name "dmitrycec"
+git config --global user.email "cecfgb@gmail.com"
+
+cd cecfgb3
+git init    - теперь появилась скрытая папки .git
+
+git add 1.txt
+git commit -m "первый коммит"
+
+git status  - какая ветка, какие изменения?
+git reset  - отменить изменения (add 1.txt)
+
+git add * добавить все файлы (даже которые не добавлены (подсвечиваются красным))
+git add  . добавить все файлы 
+
+git log --pretty=oneline
+git log --pretty=oneline --all  - вывести все
+git log --pretty=oneline --author="dmitrycec"  -фильтр по автору
+git log --pretty=format:'%h %ad  | %s%d'     %h -короткая версия хеша
+
